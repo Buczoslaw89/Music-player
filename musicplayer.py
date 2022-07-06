@@ -43,16 +43,16 @@ Label(root, image=Logo, bg="#0f1a2b").place(x=65, y=115)
 
 # buttons
 play_button = PhotoImage(file="play.png")
-Button(root, image=play_button, bg="#0f1a2b", bd=0, command=play_song).place(x=100, y=400)
+Button(root, image=play_button, bg="#0f1a2b", activebackground="#0f1a2b", bd=0, command=play_song).place(x=100, y=400)
 
 stop_button = PhotoImage(file="stop.png")
-Button(root, image=stop_button, bg="#0f1a2b", bd=0, command=mixer.music.stop).place(x=30, y=500)
+Button(root, image=stop_button, bg="#0f1a2b", activebackground="#0f1a2b", bd=0, command=mixer.music.stop).place(x=30, y=500)
 
 pause_button = PhotoImage(file="pause.png")
-Button(root, image=pause_button, bg="#0f1a2b", bd=0, command=mixer.music.pause).place(x=200, y=500)
+Button(root, image=pause_button, bg="#0f1a2b", activebackground="#0f1a2b", bd=0, command=mixer.music.pause).place(x=200, y=500)
 
 resume_button = PhotoImage(file="resume.png")
-Button(root, image=resume_button, bg="#0f1a2b", bd=0, command=mixer.music.unpause).place(x=115, y=500)
+Button(root, image=resume_button, bg="#0f1a2b", activebackground="#0f1a2b", bd=0, command=mixer.music.unpause).place(x=115, y=500)
 
 # label
 music = Label(root, text="", font=("consolas", 15), fg="white", bg="#0f1a2b")
